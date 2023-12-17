@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>New Foods to Try</h1>
+      <h1>Foodie Track List</h1>
       <NewFoodInput addFoodItem={addFoodItem} />
       <ul className="food-list">
         {foodsToTry.map((food, index) => (
