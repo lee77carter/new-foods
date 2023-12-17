@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Food = ({ name }) => {
-  return <li>{name}</li>;
+  const [tried, setTried] = useState(false);
+
+
+  return (
+    <li className={tried ? "strike" : ""} onClick={() => setTried(!tried)}> {name}</li>
+  );
 };
 
 export default Food;
